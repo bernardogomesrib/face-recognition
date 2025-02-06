@@ -1,0 +1,3 @@
+/.venv
+/face_recognition_model.keras
+/face_recognition_model_batchSize5.keras
