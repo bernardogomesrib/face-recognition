@@ -1,0 +1,15 @@
+services:
+  db:
+    image: ankane/pgvector
+    restart: always
+    environment:
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: db
+    ports:
+      - "5555:5432"
+    networks:
+      - juntatudo
+networks:
+  juntatudo:
+    driver: bridge
